@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
       <footer class="w-full py-14">
@@ -43,9 +45,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/Cart" class=" text-gray-800 hover:text-sky-900">
+                <Link to="/Cart" class=" text-gray-800 hover:text-sky-900">
                   Carts
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" class=" text-gray-800 hover:text-sky-900">
