@@ -5,3 +5,8 @@ export const getProducts = (callBack) => {
         callBack(res.data);
     });
 };
+export const getCategories = (callBack) => {
+    axios.get('https://fakestoreapi.com/products/categories').then((res) => {
+        callBack(res.data);
+    });
+}

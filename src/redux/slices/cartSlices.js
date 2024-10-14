@@ -16,6 +16,14 @@ const cartSlice = createSlice({
         state.data.push(action.payload);
       }
     },
+    removeCart :  (state, action) => {
+      const itemInCart = state.data.find(
+        (item) => item.id === action.payload.id
+      );
+      if (itemInCart){
+        itemInCart.qty = 0;
+      }
+    }
   },
 });
 

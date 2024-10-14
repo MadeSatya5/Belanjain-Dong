@@ -8,7 +8,7 @@ import './index.css'
 import Cart from './pages/Cart.jsx';
 
 
-const router = createBrowserRouter([
+const router = createBrowserRouter([ //Navigasi Halaman Web
   {
     path: "/",
     element: <Product />,

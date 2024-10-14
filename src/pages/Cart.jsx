@@ -7,10 +7,10 @@ import Footer from "../components/Footer";
 const Cart = () => {
     const carts = useSelector((state) => state.cart.data);
 
-    const [totalPrice, setTotalPrice] = useState(0);
+    const [totalPrice, setTotalPrice] = useState(0); //untuk menyimpan total harga semua item di keranjang
 
     useEffect(() => {
-        const total = carts.reduce((acc, cart) => acc + cart.price * cart.qty, 0);
+        const total = carts.reduce((acc, cart) => acc + cart.price * cart.qty, 0); //menghitung total harga setiap kali carts berubah.
         setTotalPrice(total);
     }, [carts]);
   
